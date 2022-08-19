@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "name": "Notebook APPLE MACBOOK AIR 2022 13,6\" M2 8 CPU/8 GPU 8+256GB Midnight MLY33",
+            "ratings": 12,
+            "price": 1518.41,
+            "comment": "USD 151.94 Por el envío",
+            "localImage": "assets/images/M2MacbookAir.jpg"
+        },
+        {
+            "name": "Chuwi 14\" Dual Core Laptop PC 2.8Ghz Intel N4020 8+128/256G Windows 10 portátil",
+            "ratings": 8,
+            "price": 170.99,
+            "comment": "10% DE DESCUENTO",
+            "localImage": "assets/images/Chuwi.jpg"
+        },
+        {
+            "name": "Nuevo HP 15.6\" FHD AMD Ryzen 5 5500U 2.10GHz 8GB Ram 256GB nvme Ssd Windows 11",
+            "ratings": 21,
+            "price": 469.99,
+            "comment": "Ahorra USD130.00 (21% de descuento)",
+            "localImage": "assets/images/HP.jpg"
+        },
+        {
+            "name": "Dell HP Barato Laptop-Intel Core i3 i5 i7 CPU + SSD y Wifi Windows 10 o 11 Pro",
+            "ratings": 5,
+            "price": 208.89,
+            "comment": "Se aceptan devoluciones",
+            "localImage": "assets/images/Dell.jpg"
+        }
+    ]
+}

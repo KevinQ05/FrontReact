@@ -1,0 +1,15 @@
+@import "../../utils/variables";
+
+.text {
+    font-weight: 500;
+    display: inline;
+}
+
+.text-bold {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.text-light {
+    color: $font-light;
+}

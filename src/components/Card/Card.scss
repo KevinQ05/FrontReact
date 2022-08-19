@@ -1,0 +1,45 @@
+// Utilities
+@import "../../utils/variables";
+
+.card {
+    background-color: $bg-primary;
+    width: 17.5rem;
+    min-width: 17.5rem;
+    height: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.img-container {
+    background-color: $img-backdrop;
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.title {
+    text-align: left;
+    background-color: $bg-primary;
+    height: 4rem;
+}
+
+.price, .comment {
+    text-align: left;
+    background-color: $bg-primary;
+}
