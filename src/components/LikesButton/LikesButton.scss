@@ -1,0 +1,34 @@
+@import "../../utils/variables";
+
+.likes-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid $border-color;
+    padding: 0 1rem 0 1rem;
+    &:hover + .reaction-container {
+        transform: translate(10px,-120px);
+        visibility: visible;
+    }
+}
+.likes-icon {
+    margin-right: 10px;
+    width: auto;
+}
+.likes-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+    color: $font-light;
+    transition: all 200ms ease-in-out;
+    border-radius: 1rem;
+    &:hover {
+        background-color: $img-backdrop;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+    }
+}

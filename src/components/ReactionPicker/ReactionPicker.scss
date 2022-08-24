@@ -1,0 +1,23 @@
+@import "../../utils/variables";
+
+.reaction-container {
+    // To delay hover
+    transition: visibility 0.5s ease-in-out 0.5s, transform 0.25s ease-in-out 0.4s;
+    
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    background-color: $bg-primary;
+    border: 1px solid $border-color;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    position: absolute;
+    transform: translate(10px,-80px);
+    visibility: hidden;
+    &:hover {
+        transform: translate(10px,-120px);
+        visibility: visible;
+        transition: 0s all;
+        transition-delay: 0s;
+    }
+}

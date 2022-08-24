@@ -1,0 +1,35 @@
+@import "../../utils/variables";
+
+
+.icon-img {
+    width: 25px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.4);
+        transition: all 200ms ease-in-out;
+    }
+    &:hover +.icon-label {
+        transition: all 200ms ease-in-out;
+        visibility: visible;
+    }
+}
+
+.icon-label {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    justify-content: center;
+    width: 100px;
+    transform: translate(-35px, -65px);
+    color: $icon-label-font;
+    background-color: $icon-label-bg;
+    border-radius: 2rem;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    font-weight: bold;
+}
