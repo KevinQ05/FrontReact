@@ -3,8 +3,7 @@ import Text from "../Text/Text";
 import StarRating from "../StarRating/StarRating";
 import { useState } from "react";
 import LikesButton from "../LikesButton/LikesButton";
-import { ReactionPicker, icons } from "../ReactionPicker/ReactionPicker";
-import ReactionIcon from "../ReactionIcon/ReactionIcon";
+import { ReactionPicker } from "../ReactionPicker/ReactionPicker";
 import { BiLike } from "react-icons/bi";
 
 function Card(props) {
@@ -51,6 +50,7 @@ function Card(props) {
                 <img
                   src={icon}
                   style={{ width: "20px", marginRight: "0.4rem" }}
+                  alt=""
                 />
               ),
               label: <div style={{ color: color }}>{label}</div>,

@@ -1,21 +1,17 @@
 import "./App.scss";
-import Card from "./components/Card/Card";
-import Data from "./data/products";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./pages/Home";
+import Introduction from "./pages/Introduction";
 
 function App() {
-  const stars = Data.products.map((product) => {
-    const { name, price, ratings, comment, localImage } = product;
-    return (
-      <Card image={localImage} count={ratings} price={price} comment={comment}>
-        {name}
-      </Card>
-    );
-  });
-
   return (
-    <div className="App">
-      <div className="products">{stars}</div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/introduction" element={<Introduction />} />
+      </Routes>
+    </Router>
   );
 }
 

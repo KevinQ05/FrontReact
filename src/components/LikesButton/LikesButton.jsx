@@ -1,5 +1,4 @@
 import "./LikesButton.scss";
-import { BiLike } from "react-icons/bi";
 
 function LikesButton(props) {
   return (
