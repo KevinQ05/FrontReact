@@ -1,3 +1,13 @@
+@import "src/utils/variables";
+body {
+  background-image: url("../public/assets/images/y-so-serious.png");
+  color: $font-content
+}
+
+a {
+  color: $primary;
+}
+
 .products {
   display: flex;
   width: 100%;

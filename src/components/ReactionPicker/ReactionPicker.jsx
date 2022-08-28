@@ -54,6 +54,7 @@ export function ReactionPicker(props) {
     <ReactionIcon
       icon={icon.icon}
       label={icon.label}
+      key={icon.label}
       onClick={() => handleClick(icon.icon, icon.label, icon.color)}
     />
   ));

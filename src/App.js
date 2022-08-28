@@ -1,8 +1,8 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./pages/Home";
-import Introduction from "./pages/Introduction";
+import Home from "./pages/Home/Home";
+import Introduction from "./pages/Introduction/Introduction";
 
 function App() {
   return (

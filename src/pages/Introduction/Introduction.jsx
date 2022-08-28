@@ -1,12 +1,18 @@
-import Card from "../components/Card/Card";
-import Data from "../data/products";
+import Card from "../../components/Card/Card";
+import Data from "../../data/products";
 import { Link } from "react-router-dom";
 
 export default function Introduction() {
   const stars = Data.products.map((product) => {
     const { name, price, ratings, comment, localImage } = product;
     return (
-      <Card image={localImage} count={ratings} price={price} comment={comment}>
+      <Card
+        image={localImage}
+        count={ratings}
+        price={price}
+        comment={comment}
+        key={localImage}
+      >
         {name}
       </Card>
     );

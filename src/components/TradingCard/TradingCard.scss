@@ -1,0 +1,92 @@
+// Utilities
+@import "../../utils/variables";
+
+.trading-card {
+    background-color: $bg-primary;
+    width: 17.5rem;
+    min-width: 17.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border: 2px solid $border-color;
+    box-shadow: 5px 5px $bg-primary-darker;
+}
+
+.trading-img-container {
+    background-color: $img-backdrop;
+    width: 80%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trading-name {
+    text-align: center;
+    background-color: $bg-primary;
+    height: 1rem;
+    padding-top: 0.25rem;
+    font-weight: 500;
+    font-size: large;
+}
+
+.trading-info {
+    display: flex;
+    border: 2px solid $border-color;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.25rem;
+}
+
+.trading-status {
+    display: flex;
+    align-items: center;
+}
+
+.trading-species {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.status-circle {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    size: 20px;
+}
+
+.status-alive {
+    color: $success;
+}
+
+.status-unknown {
+    color: $border-color
+}
+
+.status-dead {
+    color: $info
+}
+
+.species-human {
+    color: $primary;
+    font-style: italic;
+}
+
+.species-alien {
+    color: $secondary;
+    font-style: italic;
+}
+
+.trading-content {
+    color: $font-light;
+    width: 90%;
+    margin: auto;
+    font-size: 0.95rem;
+    height: 100%;
+}
