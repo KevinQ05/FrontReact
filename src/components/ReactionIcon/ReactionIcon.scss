@@ -24,8 +24,8 @@
     justify-content: center;
     width: 100px;
     transform: translate(-35px, -65px);
-    color: $icon-label-font;
-    background-color: $icon-label-bg;
+    color: var(--icon-label-font);
+    background-color: var(--icon-label-bg);
     border-radius: 2rem;
     padding: 5px;
     padding-left: 5px;

@@ -6,7 +6,7 @@
     justify-content: center;
     margin-bottom: 0;
     margin-top: 0.5rem;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid var(--border-color);
     padding: 0 1rem 0 1rem;
     &:hover + .reaction-container {
         transform: translate(10px,-120px);
@@ -23,11 +23,11 @@
     padding: 1rem;
     margin-top: 0.25rem;
     font-weight: 500;
-    color: $font-light;
+    color: var(--font-light);
     transition: all 200ms ease-in-out;
     border-radius: 1rem;
     &:hover {
-        background-color: $img-backdrop;
+        background-color: var(--img-backdrop);
         transition: all 200ms ease-in-out;
         cursor: pointer;
     }

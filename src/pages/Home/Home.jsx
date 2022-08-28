@@ -28,14 +28,14 @@ export default function Home() {
     });
 
   return (
-    <div className="theme-dark">
+    <>
       <div>
         <h1>Home</h1>
       </div>
       <Link to={"/introduction"}> Introduction </Link>
       <div className="trading-container">{cards}</div>
       {/* Reto: Mostrar la data de la API (TIME FOR CARDS THANK GOD YOU BUILT THEM IN JSON) */}
-    </div>
+    </>
   );
 }
 

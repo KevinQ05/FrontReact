@@ -1,11 +1,10 @@
 @import "src/utils/variables";
 body {
-  background-image: url("../public/assets/images/y-so-serious.png");
-  color: $font-content
+  color: var(--font-content);
 }
 
 a {
-  color: $primary;
+  color: var(--primary);
 }
 
 .products {

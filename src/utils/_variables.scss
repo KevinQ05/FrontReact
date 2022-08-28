@@ -1,9 +1,12 @@
 $bg-primary: #ffffff;
+$bg-primary-darker: #d6d6d6;
 $font-content: #111820;
-$font-light: #78848d;
+$font-light: #6b7379;
 $img-backdrop: #f2f2f2;
-$info: red;
-$primary: #4a90df;
+$info: rgb(248, 60, 60);
+$success: #0ba527;
+$primary: #1e70cd;
+$secondary: #ee800b;
 $border-color: #b0b3b6;
 
 // For reaction icons
@@ -28,3 +31,37 @@ $legendary: #e49af6;
 // For reaction icons
 $icon-label-bg: #303030;
 $icon-label-font: white;
+
+body {
+    --bg-primary: #ffffff;
+    --bg-primary-darker: #d6d6d6;
+    --font-content: #111820;
+    --font-light: #6b7379;
+    --img-backdrop: #f2f2f2;
+    --info: rgb(248, 60, 60);
+    --success: #0ba527;
+    --primary: #1e70cd;
+    --secondary: #ee800b;
+    --border-color: #b0b3b6;
+    --icon-label-bg: #303030;
+    --icon-label-font: white;
+    background-image: url("../../public/assets/images/webb.png");
+
+}
+
+.theme-dark {
+    --bg-primary: #282828;
+    --bg-primary-darker: #121212;
+    --font-content: #ffffffdc;
+    --font-light: #ffffffb3;
+    --img-backdrop: #313131;
+    --info: #ee5858;
+    --success: #70eb87;
+    --primary: #70a9ea;
+    --secondary: #feb566;
+    --border-color: #4e4d4d;
+    --icon-label-bg: #303030;
+    --icon-label-font: white;
+    background-image: url("../../public/assets/images/y-so-serious.png");
+
+}
