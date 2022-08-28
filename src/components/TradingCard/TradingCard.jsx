@@ -1,6 +1,7 @@
 import "./TradingCard.scss";
 import Text from "../Text/Text";
 import getDescription from "../../utils/getDescription";
+import like from "../../assets/svg/like.svg";
 import { useState, useEffect } from "react";
 import LikesButton from "../LikesButton/LikesButton";
 import { ReactionPicker } from "../ReactionPicker/ReactionPicker";
@@ -33,9 +34,34 @@ function TradingCard(props) {
   const [reaction, setReaction] = useState({
     icon: <BiLike className="likes-icon" />,
     label: "Me gusta",
+    isDefault: true,
   });
 
   const [description, setDescription] = useState("N/A");
+
+  const handleLike = () => {
+    let newReaction;
+    if (reaction.isDefault) {
+      newReaction = {
+        icon: (
+          <img
+            src={like}
+            style={{ width: "20px", marginRight: "0.4rem" }}
+            alt=""
+          />
+        ),
+        label: <div style={{ color: "#4a90df" }}>{"Me gusta"}</div>,
+        isDefault: false,
+      };
+    } else {
+      newReaction = {
+        icon: <BiLike className="likes-icon" />,
+        label: "Me gusta",
+        isDefault: true,
+      };
+    }
+    setReaction(newReaction);
+  };
 
   useEffect(() => {
     setDescription(getDescription(character));
@@ -64,14 +90,7 @@ function TradingCard(props) {
       <div className="trading-content">{description}</div>
 
       <div className="likes-container">
-        <LikesButton
-          onClick={() =>
-            setReaction({
-              icon: <BiLike className="likes-icon" />,
-              label: "Me gusta",
-            })
-          }
-        >
+        <LikesButton onClick={() => handleLike()}>
           {reaction.icon}
           {reaction.label}
         </LikesButton>
@@ -86,6 +105,7 @@ function TradingCard(props) {
                 />
               ),
               label: <div style={{ color: color }}>{label}</div>,
+              isDefault: false,
             })
           }
         />

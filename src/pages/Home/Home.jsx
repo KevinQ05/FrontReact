@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ThemeSelector from "../../components/ThemeSelector/ThemeSelector";
 import TradingCard from "../../components/TradingCard/TradingCard";
 import "./Home.scss";
 const API_URL = process.env.REACT_APP_API_URL;
@@ -29,10 +30,11 @@ export default function Home() {
 
   return (
     <>
-      <div>
+      <div className="proto-nav">
         <h1>Home</h1>
+        <Link to={"/introduction"}> Introduction </Link>
+        <ThemeSelector />
       </div>
-      <Link to={"/introduction"}> Introduction </Link>
       <div className="trading-container">{cards}</div>
       {/* Reto: Mostrar la data de la API (TIME FOR CARDS THANK GOD YOU BUILT THEM IN JSON) */}
     </>

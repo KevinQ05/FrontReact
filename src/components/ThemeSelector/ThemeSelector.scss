@@ -1,0 +1,31 @@
+@import "../../utils/variables";
+
+.theme-selector {
+    transition: all 200ms;
+    
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    background-color: var(--bg-primary);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--bg-primary--darker);
+    }
+    &:active {
+        border-color: var(--primary);
+        transition: all 200ms;
+        .theme-icon {
+            transform: scale(1.2);
+        }
+    }
+}
+.theme-icon {
+    margin-right: 0.5rem;
+    &, .theme-text {
+        transition: all 200ms;
+    }
+}
