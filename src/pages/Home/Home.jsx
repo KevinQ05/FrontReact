@@ -15,7 +15,7 @@ export default function Home() {
     hasNext: true,
   });
 
-  async function getCharacters(pageNumber = page.current) {
+  async function getCharacters(pageNumber = 1) {
     const res = await axios.get(`${API_URL}/character/?page=${pageNumber}`);
     setData(res.data);
     setPage({
@@ -54,7 +54,9 @@ export default function Home() {
   return (
     <>
       <div className="proto-nav">
-        <h1>Home</h1>
+        <h1 onClick={() => getCharacters()} style={{ cursor: "pointer" }}>
+          Home
+        </h1>
         <Link to={"/introduction"}> Introduction </Link>
         <ThemeSelector />
       </div>

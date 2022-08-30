@@ -29,7 +29,7 @@ export default function getDescription(character) {
     <p>{`Who are you? Doesn't matter, I'm ${name}. Can you get me out of ${location.name}`}</p>,
   ];
   const deadList = [
-    <p>{`Unfortunately, ${name} is no longer with us. He enjoyed his time at ${location.name}`}</p>,
+    <p>{`Unfortunately, ${name} is no longer with us. He enjoyed his time at ${location.name}.`}</p>,
     <p>{`${name} perished in gruesome battle in ${location.name}`}</p>,
     <p>{`${
       origin.name !== "unknown" ? origin.name : "The Universe"
